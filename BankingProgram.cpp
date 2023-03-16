@@ -48,7 +48,12 @@ int withdrawelamount;
 std::cout << "enter withdrawel amount : \n ";
  std::cin >> withdrawelamount;
 
-balance = balance - withdrawelamount; 
+balance = balance - withdrawelamount;  
+if(balance < withdrawelamount){ 
+    std::cout << "you cant take more money then you have!"; 
+
+}
+
 std::cout << balance; 
 
 return 0;
